@@ -1,0 +1,343 @@
+{
+    "archived": "zip",
+    "citation": "",
+    "description": "Dataset of COVID-19 in South Korea",
+    "homepage": "https://github.com/jihoo-kim/Coronavirus-Dataset",
+    "keywords": [
+        "Github",
+        "South Korea",
+        "Coronavirus",
+        "Covid-19",
+        "Machine Learning"
+    ],
+    "licenses": [
+        {
+            "name": "CC BY-NC-SA 4.0"
+        }
+    ],
+    "name": "south_korea_coronavirus",
+    "resources": [
+        {
+            "dialect": {
+                "delimiter": ","
+            },
+            "name": "case",
+            "path": "case.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "case_id",
+                        "type": "int"
+                    },
+                    {
+                        "name": "province",
+                        "size": "17",
+                        "type": "char"
+                    },
+                    {
+                        "name": "city",
+                        "size": "15",
+                        "type": "char"
+                    },
+                    {
+                        "name": "grp",
+                        "size": "5",
+                        "type": "char"
+                    },
+                    {
+                        "name": "infection_case",
+                        "size": "37",
+                        "type": "char"
+                    },
+                    {
+                        "name": "confirmed",
+                        "type": "int"
+                    },
+                    {
+                        "name": "latitude",
+                        "size": "9",
+                        "type": "double"
+                    },
+                    {
+                        "name": "longitude",
+                        "size": "10",
+                        "type": "double"
+                    }
+                ]
+            },
+            "url": "https://raw.githubusercontent.com/jihoo-kim/Coronavirus-Dataset/master/case.csv"
+        },
+        {
+            "dialect": {
+                "delimiter": ","
+            },
+            "name": "route",
+            "path": "route.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "patient_id",
+                        "type": "int"
+                    },
+                    {
+                        "name": "record_date",
+                        "size": "10",
+                        "type": "char"
+                    },
+                    {
+                        "name": "province",
+                        "size": "16",
+                        "type": "char"
+                    },
+                    {
+                        "name": "city",
+                        "size": "15",
+                        "type": "char"
+                    },
+                    {
+                        "name": "visit",
+                        "size": "17",
+                        "type": "char"
+                    },
+                    {
+                        "name": "latitude",
+                        "type": "double"
+                    },
+                    {
+                        "name": "longitude",
+                        "type": "double"
+                    }
+                ]
+            },
+            "url": "https://raw.githubusercontent.com/jihoo-kim/Coronavirus-Dataset/master/route.csv"
+        },
+        {
+            "dialect": {
+                "delimiter": ","
+            },
+            "name": "patient",
+            "path": "patient.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "patient_id",
+                        "type": "int"
+                    },
+                    {
+                        "name": "sex",
+                        "size": "6",
+                        "type": "char"
+                    },
+                    {
+                        "name": "birth_year",
+                        "type": "int"
+                    },
+                    {
+                        "name": "country",
+                        "size": "8",
+                        "type": "char"
+                    },
+                    {
+                        "name": "region",
+                        "size": "19",
+                        "type": "char"
+                    },
+                    {
+                        "name": "disease",
+                        "type": "int"
+                    },
+                    {
+                        "name": "grp",
+                        "size": "29",
+                        "type": "char"
+                    },
+                    {
+                        "name": "infection_reason",
+                        "size": "33",
+                        "type": "char"
+                    },
+                    {
+                        "name": "infection_order",
+                        "type": "int"
+                    },
+                    {
+                        "name": "infected_by",
+                        "type": "int"
+                    },
+                    {
+                        "name": "contact_number",
+                        "type": "int"
+                    },
+                    {
+                        "name": "confirmed_date",
+                        "size": "10",
+                        "type": "char"
+                    },
+                    {
+                        "name": "released_date",
+                        "size": "10",
+                        "type": "char"
+                    },
+                    {
+                        "name": "deceased_date",
+                        "size": "10",
+                        "type": "char"
+                    },
+                    {
+                        "name": "state",
+                        "size": "8",
+                        "type": "char"
+                    }
+                ]
+            },
+            "url": "https://raw.githubusercontent.com/jihoo-kim/Coronavirus-Dataset/master/patient.csv"
+        },
+        {
+            "dialect": {
+                "delimiter": ","
+            },
+            "name": "time",
+            "path": "time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "record_date",
+                        "size": "10",
+                        "type": "char"
+                    },
+                    {
+                        "name": "time",
+                        "type": "int"
+                    },
+                    {
+                        "name": "test",
+                        "type": "int"
+                    },
+                    {
+                        "name": "negative",
+                        "type": "int"
+                    },
+                    {
+                        "name": "confirmed",
+                        "type": "int"
+                    },
+                    {
+                        "name": "released",
+                        "type": "int"
+                    },
+                    {
+                        "name": "deceased",
+                        "type": "int"
+                    },
+                    {
+                        "name": "seoul",
+                        "type": "int"
+                    },
+                    {
+                        "name": "busan",
+                        "type": "int"
+                    },
+                    {
+                        "name": "daegu",
+                        "type": "int"
+                    },
+                    {
+                        "name": "incheon",
+                        "type": "int"
+                    },
+                    {
+                        "name": "gwangju",
+                        "type": "int"
+                    },
+                    {
+                        "name": "daejeon",
+                        "type": "int"
+                    },
+                    {
+                        "name": "ulsan",
+                        "type": "int"
+                    },
+                    {
+                        "name": "sejong",
+                        "type": "int"
+                    },
+                    {
+                        "name": "gyeonggi_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "gangwon_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "chungcheongbuk_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "chungcheongnam_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "jeollabuk_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "jeollanam_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "gyeongsangbuk_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "gyeongsangnam_do",
+                        "type": "int"
+                    },
+                    {
+                        "name": "jeju_do",
+                        "type": "int"
+                    }
+                ]
+            },
+            "url": "https://raw.githubusercontent.com/jihoo-kim/Coronavirus-Dataset/master/time.csv"
+        },
+        {
+            "dialect": {
+                "delimiter": ","
+            },
+            "name": "trend",
+            "path": "trend.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "record_date",
+                        "size": "10",
+                        "type": "char"
+                    },
+                    {
+                        "name": "cold",
+                        "type": "double"
+                    },
+                    {
+                        "name": "flu",
+                        "type": "double"
+                    },
+                    {
+                        "name": "pneumonia",
+                        "type": "double"
+                    },
+                    {
+                        "name": "coronavirus",
+                        "type": "double"
+                    }
+                ]
+            },
+            "url": "https://raw.githubusercontent.com/jihoo-kim/Coronavirus-Dataset/master/trend.csv"
+        }
+    ],
+    "data_source": "KCDC (Korea Centers for Disease Control and Prevention)",
+    "retriever": "True",
+    "retriever_minimum_version": "2.1.0",
+    "title": "Coronavirus-Dataset",
+    "version": "1.0.0"
+}
